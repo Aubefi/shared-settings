@@ -1,146 +1,103 @@
 {
-    "ui_font_size": 16.0,
-    "buffer_font_size": 16.0,
-    "buffer_font_features": {
-        "calt": true
+  "buffer_font_size": 15.0,
+  "auto_indent": "syntax_aware",
+  "auto_indent_on_paste": false,
+  "autosave": "on_focus_change",
+  "buffer_font_family": "JetBrains Mono",
+  "diff_view_style": "unified",
+  "disable_ai": true,
+  "file_scan_exclusions": ["**/*.uid"],
+  "icon_theme": "Material Icon Theme",
+  "line_ending": "enforce_lf",
+  "minimum_contrast_for_highlights": 40.0,
+  "restore_on_file_reopen": false,
+  "restore_on_startup": "launchpad",
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "ui_font_family": "Cascadia Mono",
+  "unnecessary_code_fade": 0.5,
+  "wrap_guides": [80, 120],
+
+  "title_bar": {
+    "show_sign_in": false,
+    "show_branch_status_icon": true
+  },
+  "status_bar": {
+    "show_active_file": true,
+    "line_endings_button": true,
+    "active_encoding_button": "enabled"
+  },
+  "search": {
+    "whole_word": true,
+    "case_sensitive": true
+  },
+  "gutter": {
+    "min_line_number_digits": 0
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "buffer_font_features": {
+    "calt": true
+  },
+  "terminal": {
+    "minimum_contrast": 64.0,
+    "font_size": 16.0,
+    "font_family": "JetBrains Mono",
+    "default_height": 200.0,
+    "default_width": 300.0,
+    "flexible": false
+  },
+  "languages": {
+    "XML": {
+      "tab_size": 2
+    }
+  },
+  "file_types": {
+    "XML": ["xaml", "axaml", "sln", "slnx", "csproj"]
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "buffer_line_height": {
+    "custom": 1.6
+  },
+  "project_panel": {
+    "hide_gitignore": true,
+    "default_width": 300.0,
+    "hide_root": true,
+    "git_status_indicator": true,
+    "diagnostic_badges": true,
+    "bold_folder_labels": true,
+    "scrollbar": {
+      "horizontal_scroll": false
     },
-    "agent": {
-        "flexible": true,
-        "favorite_models": [],
-        "model_parameters": []
-    },
-    "terminal": {
-        "font_family": "JetBrains Mono",
-        "default_height": 268.0,
-        "default_width": 366.0,
-        "flexible": false,
-        "dock": "bottom"
-    },
-    "bottom_dock_layout": "contained",
-    "diff_view_style": "unified",
-    "cli_default_open_behavior": "existing_window",
-    "auto_indent": "syntax_aware",
-    "preferred_line_length": 80,
-    "relative_line_numbers": "disabled",
-    "show_wrap_guides": true,
-    "prettier": {
-        "allowed": false
-    },
-    "scroll_beyond_last_line": "off",
-    "line_ending": "enforce_lf",
-    "restore_on_startup": "last_workspace",
-    "format_on_save": "on",
-    "tab_size": 4,
-    "languages": {
-        "C": {
-            "format_on_save": "off",
-            "tab_size": 4
-        },
-        "C++": {
-            "format_on_save": "off",
-            "tab_size": 4
-        },
-        "XML": {
-            "format_on_save": "off",
-            "tab_size": 2
-        }
-    },
-    "file_types": {
-        "XML": [
-            "xml",
-            "xaml",
-            "axaml",
-            "sln",
-            "slnx",
-            "csproj"
-        ],
-        "JSON": [
-            "XamlStyler"
+    "folder_icons": false,
+    "entry_spacing": "standard"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "macOS Classic Light",
+    "dark": "macOS Classic Dark"
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--query-driver=C:\\msys64\\ucrt64\\bin\\gcc.exe, C:\\msys64\\ucrt64\\bin\\g++.exe"
         ]
-    },
-    "icon_theme": "Material Icon Theme",
-    "disable_ai": true,
-    "git": {
-        "inline_blame": {
-            "enabled": false
-        },
-        "enable_diff": true,
-        "enable_status": true
-    },
-    "indent_guides": {
-        "enabled": true,
-        "line_width": 1,
-        "active_line_width": 1,
-        "coloring": "fixed"
-    },
-    "redact_private_values": false,
-    "autosave": "on_focus_change",
-    "rounded_selection": true,
-    "buffer_line_height": "comfortable",
-    "buffer_font_weight": 400.0,
-    "buffer_font_family": "JetBrains Mono",
-    "project_panel": {
-        "hide_gitignore": true,
-        "hide_hidden": true,
-        "default_width": 366.0,
-        "sort_order": "default",
-        "sort_mode": "directories_first",
-        "hide_root": true,
-        "indent_guides": {
-            "show": "always"
-        },
-        "sticky_scroll": true,
-        "git_status_indicator": true,
-        "diagnostic_badges": true,
-        "bold_folder_labels": true,
-        "scrollbar": {
-            "horizontal_scroll": false
-        },
-        "indent_size": 20.0,
-        "folder_icons": false,
-        "git_status": true,
-        "entry_spacing": "comfortable",
-        "file_icons": true,
-        "dock": "right"
-    },
-    "theme": {
-        "mode": "dark",
-        "light": "Ayu Light",
-        "dark": "VSCode Dark Modern"
-    },
-    "experimental.theme_overrides": {
-        "syntax": {
-            "keyword": {
-                "font_style": "italic"
-            },
-            "modifier": {
-                "font_style": "italic"
-            },
-            "comment": {
-                "font_style": "italic"
-            }
-        }
-    },
-    "lsp": {
-        "clangd": {
-            "binary": {
-                "arguments": [
-                    "--query-driver=C:\\msys64\\ucrt64\\bin\\gcc.exe, C:\\msys64\\ucrt64\\bin\\g++.exe"
-                ]
-            },
-            "initialization_options": {
-                "fallbackFlags": [
-                    "--target=x86_64-w64-mingw32",
-                    "-IC:\\msys64\\ucrt64\\include"
-                ]
-            }
-        }
-    },
-    "wrap_guides": [
-        80,
-        120
-    ],
-    "file_scan_exclusions": [
-        "**/*.uid"
-    ]
+      },
+      "initialization_options": {
+        "fallbackFlags": [
+          "--target=x86_64-w64-mingw32",
+          "-IC:\\msys64\\ucrt64\\include"
+        ]
+      }
+    }
+  }
 }
