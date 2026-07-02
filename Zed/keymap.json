@@ -1,0 +1,61 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-q": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-b": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-a": "task::Spawn"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "alt-shift-t": "task::Spawn"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w": ["terminal::SendKeystroke", "ctrl-w"]
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-shift-w": "workspace::CloseWindow"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-shift-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "alt-z": "editor::ToggleSoftWrap"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-k z": "editor::ToggleSoftWrap"
+    }
+  }
+]
